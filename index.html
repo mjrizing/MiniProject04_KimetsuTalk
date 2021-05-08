@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Welcome to Kimetsu Talk</title>
+  </head>
+  <body class="index-body-color">
+    <div class="status-bar light-status-bar">
+      <div class="status-bar__column">
+        <span>機内モード</span>
+        <i class="fas fa-plane"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>03:52</span>
+      </div>
+      <div class="status-bar__column">
+        <span>21%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <img src="images/backgroundindex.jpeg" />
+      <h1 class="welcome-header__title">鬼滅のトーク</h1>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        type="text"
+        placeholder="Email or Phone number"
+        required
+        maxlength="14"
+      />
+      <input
+        name="password"
+        type="password"
+        placeholder="Password"
+        required
+        maxlength="12"
+      />
+      <input type="submit" value="Log in" />
+      <input type="submit" value="Sign up" />
+      <a href="https://github.com/mjrizing">Forgot? Find Account or password</a>
+    </form>
+    <div id="no-mobile">
+      <h2>画面を小さくしてください🤔</h2>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/358173d6e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

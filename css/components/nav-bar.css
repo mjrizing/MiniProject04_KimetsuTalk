@@ -1,0 +1,117 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--brown);
+  padding: 10px 0;
+  border-top: solid 6px rgba(0, 0, 0, 0.7);
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link {
+  position: relative; /*notification아 position absolute를 가지기 위한 */
+  color: rgb(77, 143, 219);
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(90deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+/* from animista */
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.71);
+    transform: scale(0.71);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(1.28);
+    transform: scale(1.68);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.67);
+    transform: scale(0.67);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.nav__notification {
+  animation: heartbeat 3s ease-in-out infinite both;
+  z-index: 1;
+  position: absolute;
+  left: 18px;
+  bottom: 15px;
+}
+.nav__list:first-child .nav__notification {
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+  font-style: italic;
+}
+.nav__list:last-child .nav__notification {
+  position: absolute;
+  left: 32px;
+  bottom: 25px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.nav__list {
+  animation: appearBtnAnimation 0.8s linear;
+  opacity: 1;
+}
+.nav__list i {
+  opacity: 0.6;
+}
+.nav__list:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.nav__list:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.nav__list:last-child {
+  animation-delay: 0.3s;
+}
+
+.nav__list .for-each-pages {
+  opacity: 1;
+}
+.nav__image {
+  position: absolute;
+  left: 47vw;
+  top: 0;
+  width: 30px;
+  height: 45px;
+  fill: #d65449;
+}

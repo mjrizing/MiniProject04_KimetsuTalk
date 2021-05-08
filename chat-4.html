@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Kimetsu Talk</title>
+  </head>
+  <body id="chat-screen">
+    <div class="screen-fixed">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>潜行モード</span>
+          <i class="fas fa-plane"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>03:52</span>
+        </div>
+        <div class="status-bar__column">
+          <span>21%</span>
+          <i class="fas fa-battery-quarter fa-lg"></i>
+          <i class="fas fa-bolt"></i>
+        </div>
+      </div>
+      <header class="alt-header">
+        <div class="alt-header__column">
+          <a href="chats.html"> <i class="fas fa-angle-left fa-2x"></i></a>
+        </div>
+        <div class="alt-header__column">
+          <h1 class="alt-header__title"></h1>
+        </div>
+        <div class="alt-header__column">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
+      </header>
+    </div>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">ここまで既読しました</div>
+      <div class="message-row">
+        <img src="images/nezuko.png" />
+        <div class="message-row__content">
+          <span class="message__author">禰󠄀豆子</span>
+          <div class="message__info">
+            <span class="message__bubble">むーむむむ！</span>
+            <span class="message__time">19:36</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">禰󠄀豆子！何かあったの？</span>
+            <span class="message__time">19:38</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img src="images/nezuko.png" />
+        <div class="message-row__content">
+          <span class="message__author">禰󠄀豆子</span>
+          <div class="message__info">
+            <span class="message__bubble">むむむ　む！</span>
+            <span class="message__time">19:43</span>
+            <span class="message__unread">1</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" name="" placeholder="Write a message.." />
+        <i class="far fa-smile-wink fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <button>
+          <i class="fas fa-arrow-circle-up fa-2x"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <h2>画面を小さくしてください🤔</h2>
+      <div class="no-mobile__images">
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/358173d6e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
